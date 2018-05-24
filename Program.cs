@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Data;
 using System.Linq;
 
-namespace calcutator_app
+namespace calcutator
 {
     class Program
     {
@@ -17,14 +16,6 @@ namespace calcutator_app
             Console.WriteLine(input2 + " = " + Calculator.Calc(input2)); // 9
             Console.WriteLine(input3 + " = " + Calculator.Calc(input3)); // 8
             Console.WriteLine(input4 + " = " + Calculator.Calc(input4)); // 25
-        }
-    }
-
-    class Calculator
-    {
-        public static double Calc(string input)
-        {
-            return Convert.ToDouble(new DataTable().Compute(input, null));
         }
     }
 }
